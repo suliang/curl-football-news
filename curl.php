@@ -1,4 +1,4 @@
-<meta charset="utf-8">
+<meta charset="utf-8"> 
 <?php 
 /**
  * 采集虎扑足球网站的当日新闻（标题和链接）
@@ -63,7 +63,7 @@
 
 
 
-	
+
 
 	$newsurl = "http://voice.hupu.com/soccer/newslist";
 	$newsarr = caiji($newsurl);
