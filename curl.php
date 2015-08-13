@@ -7,13 +7,11 @@
  */
 	function caiji($url = "http://voice.hupu.com/soccer/newslist")
 	{
-
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL, $url);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
 		$content = curl_exec($ch);
 		curl_close($ch);
-
 		$little = stripos($content,'<div class="news-list">');
 		$content = substr ($content,$little);
 		$content = substr ($content,0,30000);                 //10000字大约是6条新闻，你自己估摸着
